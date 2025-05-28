@@ -1,0 +1,14 @@
+﻿namespace SCAD_API_V2.Domain.Entities
+{
+    public class Cliente
+    {
+        public int ClienteId { get; set; }
+        public string Email { get; set; }
+        public string CPF_CNPJ { get; set; }
+        public string Nome { get; set; }
+        public string NomeEmpresa { get; set; }
+        public string Telefone { get; set; }
+        public DateTime DataCadastro { get; set; }
+        public DateTime? DataExpira { get; set; }
+    }
+}
