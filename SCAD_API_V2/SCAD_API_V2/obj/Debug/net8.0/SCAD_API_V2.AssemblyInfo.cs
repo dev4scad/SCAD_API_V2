@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SCAD_API_V2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0327d3c25c9e3319e6b363853d20d5a50d9b68a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SCAD_API_V2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SCAD_API_V2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

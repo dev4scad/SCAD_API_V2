@@ -3,7 +3,7 @@
     public class Vinculo
     {
         public int VinculoId { get; set; }
-        public string LicencaKey { get; set; } = string.Empty;
+        public string Licenca { get; set; } = string.Empty;
         public string Maquina { get; set; } = string.Empty;
         public int LicencaId { get; set; }
         public string DataVinculo { get; set; } = string.Empty;
