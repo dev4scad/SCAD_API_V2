@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Scad-0048\\Desktop\\SCAD_API_V2\\SCAD_API_V2\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\scad_api_v2\\scad_api_v2\\scad_api_v2\\infrastructure\\data\\vinculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\infrastructure\\data\\vinculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\scad_api_v2\\scad_api_v2\\scad_api_v2\\domain\\entities\\licenca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\domain\\entities\\licenca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Licenca.cs",
-              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Domain\\Entities\\Licenca.cs",
-              "RelativeDocumentMoniker": "SCAD_API_V2\\Domain\\Entities\\Licenca.cs",
-              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Domain\\Entities\\Licenca.cs",
-              "RelativeToolTip": "SCAD_API_V2\\Domain\\Entities\\Licenca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T19:04:06.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VinculoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
-              "RelativeDocumentMoniker": "SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
-              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
-              "RelativeToolTip": "SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAkwMoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:44:39.567Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

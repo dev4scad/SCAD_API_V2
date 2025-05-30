@@ -326,148 +326,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "ListarUsuarios",
-    "RelativePath": "api/licenca/v2/{banco}/usuario",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "CadastrarUsuario",
-    "RelativePath": "api/licenca/v2/{banco}/usuario",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "usuarioDto",
-        "Type": "SCAD_API_V2.Application.DTO.UsuarioDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "EditarUsuario",
-    "RelativePath": "api/licenca/v2/{banco}/usuario",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "usuarioDto",
-        "Type": "SCAD_API_V2.Application.DTO.UsuarioDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "BuscarUsuarioPorId",
-    "RelativePath": "api/licenca/v2/{banco}/usuario/{usuarioId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "usuarioId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "ExcluirUsuario",
-    "RelativePath": "api/licenca/v2/{banco}/usuario/{usuarioId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "usuarioId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "BuscarUsuarioPorEmail",
-    "RelativePath": "api/licenca/v2/{banco}/usuario/email/{email}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
-    "Method": "BuscarUsuarioPorNome",
-    "RelativePath": "api/licenca/v2/{banco}/usuario/nome/{nome}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "nome",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "banco",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
     "Method": "ListarVinculos",
     "RelativePath": "api/licenca/v2/{banco}/vinculo",
@@ -646,6 +504,112 @@
       {
         "Name": "banco",
         "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "ListarUsuarios",
+    "RelativePath": "api/licenca/v2/usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "CadastrarUsuario",
+    "RelativePath": "api/licenca/v2/usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "SCAD_API_V2.Application.DTO.UsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "EditarUsuario",
+    "RelativePath": "api/licenca/v2/usuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "SCAD_API_V2.Application.DTO.UsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorId",
+    "RelativePath": "api/licenca/v2/usuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "ExcluirUsuario",
+    "RelativePath": "api/licenca/v2/usuario/{usuarioId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorEmail",
+    "RelativePath": "api/licenca/v2/usuario/email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorNome",
+    "RelativePath": "api/licenca/v2/usuario/nome/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

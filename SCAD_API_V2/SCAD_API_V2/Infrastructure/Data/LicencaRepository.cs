@@ -140,8 +140,8 @@ namespace SCAD_API_V2.Infrastructure.Data
                     TipoLicencaId, 
                     SoftwareId
                 FROM licencas 
-                WHERE LicencaId = LAST_INSERT_ID()";
-            var criado = await db.QuerySingleAsync<Licenca>(selectSql);
+                WHERE LicencaId = @LicencaId";
+            var criado = await db.QuerySingleAsync<Licenca>(selectSql, new { licenca.LicencaId });
             return new List<Licenca> { criado };
         }
 

@@ -5,7 +5,7 @@ using SCAD_API_V2.Application.DTO;
 namespace SCAD_API_V2.Controllers
 {
     [ApiController]
-    [Route("api/licenca/v2/{banco}/usuario")]
+    [Route("api/licenca/v2/usuario")]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioServices _usuarioService;

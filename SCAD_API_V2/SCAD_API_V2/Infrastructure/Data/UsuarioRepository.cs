@@ -1,10 +1,8 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
-using SCAD_API_V2.Application.Http;
 using SCAD_API_V2.Application.Interfaces;
 using SCAD_API_V2.Domain.Entities;
-using SCAD_API_V2.Domain.Enums;
 using System.Data;
 
 namespace SCAD_API_V2.Infrastructure.Data
@@ -12,19 +10,15 @@ namespace SCAD_API_V2.Infrastructure.Data
     public class UsuarioRepository : IUsuarioRepository
     {
         private readonly ConnectionString _connStr;
-        private readonly ICurrentDatabase _currentDb;
 
-        public UsuarioRepository(IOptions<ConnectionString> options, ICurrentDatabase currentDb)
+        public UsuarioRepository(IOptions<ConnectionString> options)
         {
             _connStr = options.Value;
-            _currentDb = currentDb;
         }
 
         private IDbConnection Connection()
         {
-            var conn = _currentDb.Database == Database.Autopower
-                ? _connStr.Autopower
-                : _connStr.Autohidro;
+            var conn = _connStr.Autopower;
 
             return new MySqlConnection(conn);
         }
@@ -79,11 +73,11 @@ namespace SCAD_API_V2.Infrastructure.Data
 
             const string insertSql = @"
                 INSERT INTO usuarios (usuarioId, nomeDoUsuario, email, senha, ativo)
-                VALUES (UsuarioId, @NomeDoUsuario, @Email, @Senha, @Ativo);";
+                VALUES (@UsuarioId, @NomeDoUsuario, @Email, @Senha, @Ativo);";
             await db.ExecuteAsync(insertSql, usuario);
 
-            const string selectSql = "SELECT * FROM usuarios WHERE usuarioId = LAST_INSERT_ID()";
-            return await db.QuerySingleAsync<Usuario>(selectSql);
+            const string selectSql = "SELECT * FROM usuarios WHERE usuarioId = @usuarioId";
+            return await db.QuerySingleAsync<Usuario>(selectSql, new { usuarioId = usuario.UsuarioId });
         }
 
         public async Task<Usuario> EditarUsuarioAsync(Usuario usuario)

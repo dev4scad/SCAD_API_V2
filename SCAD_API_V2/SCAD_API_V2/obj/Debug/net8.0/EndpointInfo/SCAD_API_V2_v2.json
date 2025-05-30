@@ -506,20 +506,10 @@
         }
       }
     },
-    "/api/licenca/v2/{banco}/usuario": {
+    "/api/licenca/v2/usuario": {
       "get": {
         "tags": [
           "Usuario"
-        ],
-        "parameters": [
-          {
-            "name": "banco",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -530,16 +520,6 @@
       "post": {
         "tags": [
           "Usuario"
-        ],
-        "parameters": [
-          {
-            "name": "banco",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -570,16 +550,6 @@
         "tags": [
           "Usuario"
         ],
-        "parameters": [
-          {
-            "name": "banco",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -606,7 +576,7 @@
         }
       }
     },
-    "/api/licenca/v2/{banco}/usuario/{usuarioId}": {
+    "/api/licenca/v2/usuario/{usuarioId}": {
       "get": {
         "tags": [
           "Usuario"
@@ -619,14 +589,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          },
-          {
-            "name": "banco",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ],
@@ -649,14 +611,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "banco",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -666,7 +620,7 @@
         }
       }
     },
-    "/api/licenca/v2/{banco}/usuario/email/{email}": {
+    "/api/licenca/v2/usuario/email/{email}": {
       "get": {
         "tags": [
           "Usuario"
@@ -679,14 +633,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "banco",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -696,7 +642,7 @@
         }
       }
     },
-    "/api/licenca/v2/{banco}/usuario/nome/{nome}": {
+    "/api/licenca/v2/usuario/nome/{nome}": {
       "get": {
         "tags": [
           "Usuario"
@@ -704,14 +650,6 @@
         "parameters": [
           {
             "name": "nome",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "banco",
             "in": "path",
             "required": true,
             "schema": {
