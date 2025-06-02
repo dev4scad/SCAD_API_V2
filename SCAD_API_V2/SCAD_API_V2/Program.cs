@@ -1,4 +1,3 @@
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using SCAD_API_V2.Application.Http;
 using SCAD_API_V2.Application.Interfaces;

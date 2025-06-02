@@ -49,10 +49,15 @@ namespace SCAD_API_V2.Application.Services
             if (cliente == null)
                 throw new ArgumentException("Cliente não encontrado");
 
-            string chaveUnica = GerarChaveUnica();
+            string chaveUnica;
+            do
+            {
+                chaveUnica = GerarChaveUnica();
+            }
+            while (await _repo.BuscarLicencaPorKeyAsync(chaveUnica) != null);
 
             var entidade = _mapper.Map<Licenca>(licencaDto);
-            entidade.LicencaKey = chaveUnica; 
+            entidade.LicencaKey = chaveUnica;
             entidade.Ativo = true;
 
             var criadas = await _repo.CriarLicencaAsync(entidade);
