@@ -153,8 +153,18 @@ namespace SCAD_API_V2.Infrastructure.Data
             if (!licencaExists)
                 throw new KeyNotFoundException($"LicencaId {vinculo.LicencaId} não encontrado.");
 
-            const string countSql = "SELECT COUNT(1) FROM vinculos WHERE LicencaId = @LicencaId AND Maquina = @Maquina";
-            var exists = await db.ExecuteScalarAsync<int>(countSql, new { vinculo.LicencaId, vinculo.Maquina }) > 0;
+            // Obter o SoftwareId da licença que está sendo vinculada
+            const string getSoftwareIdSql = "SELECT SoftwareId FROM licencas WHERE LicencaId = @LicencaId";
+            var softwareId = await db.ExecuteScalarAsync<int>(getSoftwareIdSql, new { vinculo.LicencaId });
+
+            // Verificar se já existe vínculo para a mesma máquina e mesmo software
+            const string countSql = @"
+                SELECT COUNT(1)
+                  FROM vinculos v
+                  JOIN licencas l ON v.LicencaId = l.LicencaId
+                 WHERE v.Maquina = @Maquina
+                   AND l.SoftwareId = @SoftwareId";
+            var exists = await db.ExecuteScalarAsync<int>(countSql, new { vinculo.Maquina, SoftwareId = softwareId }) > 0;
             if (exists) return null!;
 
             const string LicencaKeySql = "SELECT Licenca FROM licencas WHERE LicencaId = @LicencaId";
@@ -170,7 +180,7 @@ namespace SCAD_API_V2.Infrastructure.Data
             const string selectSql = "SELECT * FROM vinculos WHERE VinculoId = @VinculoId";
             var result = await db.QuerySingleOrDefaultAsync<Vinculo>(selectSql, vinculo);
             if (result == null)
-                throw new InvalidOperationException("Vinculo was not created or could not be retrieved.");
+                throw new InvalidOperationException("Houve um erro ao cadastrar/retornar o vinculo.");
             return result;
         }
 
