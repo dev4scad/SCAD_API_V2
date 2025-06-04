@@ -40,10 +40,10 @@ namespace SCAD_API_V2.Controllers
             return Ok(result);
         }
 
-        [HttpGet("maquina/{maquina}")]
-        public async Task<IActionResult> BuscarVinculoPorMaquina(string maquina)
+        [HttpGet("maquina/{maquina}/{softwareId:int}")]
+        public async Task<IActionResult> BuscarVinculoPorMaquina(string maquina, int softwareId)
         {
-            var result = await _vinculoService.BuscarVinculoPorMaquinaAsync(maquina);
+            var result = await _vinculoService.BuscarVinculoPorMaquinaAsync(maquina, softwareId);
             if (result == null)
                 return NotFound();
             return Ok(result);
@@ -71,6 +71,8 @@ namespace SCAD_API_V2.Controllers
         public async Task<IActionResult> CadastrarVinculo([FromBody] VinculoDto vinculoDto)
         {
             var result = await _vinculoService.CadastrarVinculoAsync(vinculoDto);
+            if (result == null)
+                return BadRequest("Esta licença já está vinculada a outra máquina.");
             return Created("", result);
         }
 

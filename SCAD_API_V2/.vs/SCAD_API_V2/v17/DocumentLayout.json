@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\infrastructure\\data\\vinculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\controllers\\vinculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\controllers\\vinculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\application\\services\\vinculoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\application\\services\\vinculoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\application\\interfaces\\ivinculoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\application\\interfaces\\ivinculoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\domain\\interfaces\\ivinculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\domain\\interfaces\\ivinculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\infrastructure\\data\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\infrastructure\\data\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +42,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "VinculoController.cs",
+              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Controllers\\VinculoController.cs",
+              "RelativeDocumentMoniker": "SCAD_API_V2\\Controllers\\VinculoController.cs",
+              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Controllers\\VinculoController.cs",
+              "RelativeToolTip": "SCAD_API_V2\\Controllers\\VinculoController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAjwEUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:25:50.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IVinculoServices.cs",
+              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Application\\Interfaces\\IVinculoServices.cs",
+              "RelativeDocumentMoniker": "SCAD_API_V2\\Application\\Interfaces\\IVinculoServices.cs",
+              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Application\\Interfaces\\IVinculoServices.cs",
+              "RelativeToolTip": "SCAD_API_V2\\Application\\Interfaces\\IVinculoServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:23:54.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VinculoServices.cs",
+              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Application\\Services\\VinculoServices.cs",
+              "RelativeDocumentMoniker": "SCAD_API_V2\\Application\\Services\\VinculoServices.cs",
+              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Application\\Services\\VinculoServices.cs",
+              "RelativeToolTip": "SCAD_API_V2\\Application\\Services\\VinculoServices.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA7wCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:22:38.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IVinculoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Domain\\Interfaces\\IVinculoRepository.cs",
+              "RelativeDocumentMoniker": "SCAD_API_V2\\Domain\\Interfaces\\IVinculoRepository.cs",
+              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Domain\\Interfaces\\IVinculoRepository.cs",
+              "RelativeToolTip": "SCAD_API_V2\\Domain\\Interfaces\\IVinculoRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:15:00.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "SCAD_API_V2\\Infrastructure\\Data\\UsuarioRepository.cs",
@@ -49,14 +116,14 @@
               "RelativeDocumentMoniker": "SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
               "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
               "RelativeToolTip": "SCAD_API_V2\\Infrastructure\\Data\\VinculoRepository.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAIwLQAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwK0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T13:50:07.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "LicencaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\LicencaRepository.cs",
               "RelativeDocumentMoniker": "SCAD_API_V2\\Infrastructure\\Data\\LicencaRepository.cs",
@@ -69,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Program.cs",
               "RelativeDocumentMoniker": "SCAD_API_V2\\Program.cs",
@@ -77,8 +144,7 @@
               "RelativeToolTip": "SCAD_API_V2\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T18:52:07.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T18:52:07.157Z"
             }
           ]
         }

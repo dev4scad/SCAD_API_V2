@@ -7,7 +7,7 @@ namespace SCAD_API_V2.Application.Interfaces
         Task<List<VinculoDto>> ListarVinculosAsync();
         Task<VinculoDto> BuscarVinculoPorIdAsync(int id);
         Task<VinculoDto> BuscarVinculoPorLicencaAsync(string licenca);
-        Task<VinculoDto> BuscarVinculoPorMaquinaAsync(string maquina);
+        Task<VinculoDto> BuscarVinculoPorMaquinaAsync(string maquina, int softwareId);
         Task<VinculoDto> BuscarVinculoPorLicencaIdAsync(int licencaId);
         Task<VinculoDto> BuscarVinculoPorNomeMaquinaAsync(string nomeMaquina);
         Task<VinculoDto> CadastrarVinculoAsync(VinculoDto vinculoDto);

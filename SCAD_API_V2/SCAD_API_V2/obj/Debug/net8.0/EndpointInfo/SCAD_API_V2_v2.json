@@ -854,7 +854,7 @@
         }
       }
     },
-    "/api/licenca/v2/{banco}/vinculo/maquina/{maquina}": {
+    "/api/licenca/v2/{banco}/vinculo/maquina/{maquina}/{softwareId}": {
       "get": {
         "tags": [
           "Vinculo"
@@ -866,6 +866,15 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "softwareId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           },
           {

@@ -470,7 +470,7 @@
   {
     "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
     "Method": "BuscarVinculoPorMaquina",
-    "RelativePath": "api/licenca/v2/{banco}/vinculo/maquina/{maquina}",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/maquina/{maquina}/{softwareId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -478,6 +478,11 @@
       {
         "Name": "maquina",
         "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "softwareId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {

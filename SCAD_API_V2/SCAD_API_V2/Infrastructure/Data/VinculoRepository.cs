@@ -84,24 +84,32 @@ namespace SCAD_API_V2.Infrastructure.Data
             return await db.QueryFirstAsync<Vinculo>(selectSql, new { Licenca = licencaKey });
         }
 
-        public async Task<Vinculo> BuscarVinculoPorMaquinaAsync(string maquina)
+        public async Task<Vinculo> BuscarVinculoPorMaquinaAsync(string maquina, int softwareId)
         {
             using var db = Connection();
-            const string countSql = "SELECT COUNT(1) FROM vinculos WHERE Maquina = @Maquina";
-            var exists = await db.ExecuteScalarAsync<int>(countSql, new { Maquina = maquina }) > 0;
+            // Verifica se existe vínculo para a máquina e software
+            const string countSql = @"
+                SELECT COUNT(1)
+                  FROM vinculos v
+                  JOIN licencas l ON v.LicencaId = l.LicencaId
+                 WHERE v.Maquina = @Maquina
+                   AND l.SoftwareId = @SoftwareId";
+            var exists = await db.ExecuteScalarAsync<int>(countSql, new { Maquina = maquina, SoftwareId = softwareId }) > 0;
             if (!exists) return null!;
 
             const string selectSql = @"
                 SELECT
-                    VinculoId,
-                    Licenca,
-                    Maquina,
-                    LicencaId,
-                    DataVinculo,
-                    NomeMaquina
-                  FROM vinculos
-                 WHERE Maquina = @Maquina";
-            return await db.QueryFirstAsync<Vinculo>(selectSql, new { Maquina = maquina });
+                    v.VinculoId,
+                    v.Licenca,
+                    v.Maquina,
+                    v.LicencaId,
+                    v.DataVinculo,
+                    v.NomeMaquina
+                  FROM vinculos v
+                  JOIN licencas l ON v.LicencaId = l.LicencaId
+                 WHERE v.Maquina = @Maquina
+                   AND l.SoftwareId = @SoftwareId";
+            return await db.QueryFirstAsync<Vinculo>(selectSql, new { Maquina = maquina, SoftwareId = softwareId });
         }
 
         public async Task<Vinculo> BuscarVinculoPorLicencaIdAsync(int licencaId)
@@ -152,6 +160,12 @@ namespace SCAD_API_V2.Infrastructure.Data
             var licencaExists = await db.ExecuteScalarAsync<int>(countLicencaSql, new { vinculo.LicencaId }) > 0;
             if (!licencaExists)
                 throw new KeyNotFoundException($"LicencaId {vinculo.LicencaId} não encontrado.");
+
+            // Nova verificação: a licença já está vinculada a alguma máquina?
+            const string countLicencaVinculoSql = "SELECT COUNT(1) FROM vinculos WHERE LicencaId = @LicencaId";
+            var licencaJaVinculada = await db.ExecuteScalarAsync<int>(countLicencaVinculoSql, new { vinculo.LicencaId }) > 0;
+            if (licencaJaVinculada)
+                return null!;
 
             // Obter o SoftwareId da licença que está sendo vinculada
             const string getSoftwareIdSql = "SELECT SoftwareId FROM licencas WHERE LicencaId = @LicencaId";

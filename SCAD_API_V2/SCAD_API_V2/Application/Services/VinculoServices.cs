@@ -35,9 +35,10 @@ namespace SCAD_API_V2.Application.Services
             return _mapper.Map<VinculoDto>(entidade);
         }
 
-        public async Task<VinculoDto> BuscarVinculoPorMaquinaAsync(string maquina)
+
+        public async Task<VinculoDto> BuscarVinculoPorMaquinaAsync(string maquina, int softwareId)
         {
-            var entidade = await _repo.BuscarVinculoPorMaquinaAsync(maquina);
+            var entidade = await _repo.BuscarVinculoPorMaquinaAsync(maquina, softwareId);
             return _mapper.Map<VinculoDto>(entidade);
         }
 
