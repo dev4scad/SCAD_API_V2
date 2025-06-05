@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,19 +19,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\README.md",
-              "RelativeDocumentMoniker": "SCAD_API_V2\\README.md",
-              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\README.md",
-              "RelativeToolTip": "SCAD_API_V2\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-06-05T17:29:25.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "SCAD_API_V2\\Controllers\\ClienteController.cs",
