@@ -1,0 +1,623 @@
+[
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "BuscarClientes",
+    "RelativePath": "api/licenca/v2/{banco}/cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "CriarCliente",
+    "RelativePath": "api/licenca/v2/{banco}/cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteDto",
+        "Type": "SCAD_API_V2.Application.DTO.ClienteDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "EditarCliente",
+    "RelativePath": "api/licenca/v2/{banco}/cliente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteDto",
+        "Type": "SCAD_API_V2.Application.DTO.ClienteDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "BuscarClientePorId",
+    "RelativePath": "api/licenca/v2/{banco}/cliente/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "ExcluirCliente",
+    "RelativePath": "api/licenca/v2/{banco}/cliente/{usuarioId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "BuscarClientePorCNPJ_CPF",
+    "RelativePath": "api/licenca/v2/{banco}/cliente/cpf/{cpfCnpj}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cpfCnpj",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "BuscarClientePorEmail",
+    "RelativePath": "api/licenca/v2/{banco}/cliente/email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "BuscarClientePorNome",
+    "RelativePath": "api/licenca/v2/{banco}/cliente/nome/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.ClienteController",
+    "Method": "BuscarClientePorTelefone",
+    "RelativePath": "api/licenca/v2/{banco}/cliente/telefone/{telefone}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telefone",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "BuscarLicencas",
+    "RelativePath": "api/licenca/v2/{banco}/licenca",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "CriarLicenca",
+    "RelativePath": "api/licenca/v2/{banco}/licenca",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencaDto",
+        "Type": "SCAD_API_V2.Application.DTO.LicencaDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "EditarLicenca",
+    "RelativePath": "api/licenca/v2/{banco}/licenca",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencaDto",
+        "Type": "SCAD_API_V2.Application.DTO.LicencaDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "BuscarLicencaPorId",
+    "RelativePath": "api/licenca/v2/{banco}/licenca/{licencaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "ExcluirLicenca",
+    "RelativePath": "api/licenca/v2/{banco}/licenca/{licencaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "BuscarLicencaPorClienteId",
+    "RelativePath": "api/licenca/v2/{banco}/licenca/cliente/{clienteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.LicencaController",
+    "Method": "BuscarLicencaPorKey",
+    "RelativePath": "api/licenca/v2/{banco}/licenca/key/{licencaKey}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencaKey",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "ListarVinculos",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "CadastrarVinculo",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vinculoDto",
+        "Type": "SCAD_API_V2.Application.DTO.VinculoDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "EditarVinculo",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vinculoDto",
+        "Type": "SCAD_API_V2.Application.DTO.VinculoDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "BuscarVinculoPorId",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "ExcluirVinculo",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "BuscarVinculoPorLicenca",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/licenca/{licenca}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licenca",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "BuscarVinculoPorLicencaId",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/licencaId/{licencaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licencaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "BuscarVinculoPorMaquina",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/maquina/{maquina}/{softwareId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maquina",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "softwareId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.VinculoController",
+    "Method": "BuscarVinculoPorNomeMaquina",
+    "RelativePath": "api/licenca/v2/{banco}/vinculo/nomeMaquina/{nomeMaquina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nomeMaquina",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "banco",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "ListarUsuarios",
+    "RelativePath": "api/licenca/v2/usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "CadastrarUsuario",
+    "RelativePath": "api/licenca/v2/usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "SCAD_API_V2.Application.DTO.UsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "EditarUsuario",
+    "RelativePath": "api/licenca/v2/usuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "SCAD_API_V2.Application.DTO.UsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorId",
+    "RelativePath": "api/licenca/v2/usuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "ExcluirUsuario",
+    "RelativePath": "api/licenca/v2/usuario/{usuarioId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorEmail",
+    "RelativePath": "api/licenca/v2/usuario/email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SCAD_API_V2.Controllers.UsuarioController",
+    "Method": "BuscarUsuarioPorNome",
+    "RelativePath": "api/licenca/v2/usuario/nome/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

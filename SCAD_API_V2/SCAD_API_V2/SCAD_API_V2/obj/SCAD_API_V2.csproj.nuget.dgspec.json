@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2.csproj": {}
+  },
+  "projects": {
+    "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2.csproj",
+        "projectName": "SCAD_API_V2",
+        "projectPath": "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2.csproj",
+        "packagesPath": "/home/dev4/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dev4/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

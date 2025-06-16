@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/SCAD_API_V2.props" />
+</Project>
