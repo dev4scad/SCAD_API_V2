@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\",
+  "WorkspaceRootPath": "C:\\Users\\Scad-0048\\Desktop\\sites\\APWR_API_Sites\\SCAD_API_V2\\SCAD_API_V2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\api\\scad_api_v2\\scad_api_v2\\scad_api_v2\\infrastructure\\data\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|c:\\users\\scad-0048\\desktop\\sites\\apwr_api_sites\\scad_api_v2\\scad_api_v2\\scad_api_v2\\infrastructure\\data\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D4FD71-2795-414E-862F-11EEC64E2B51}|SCAD_API_V2\\SCAD_API_V2.csproj|solutionrelative:scad_api_v2\\infrastructure\\data\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Scad-0048\\Desktop\\sites\\APWR_API_Sites\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "SCAD_API_V2\\Infrastructure\\Data\\ClienteRepository.cs",
-              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\Scad-0048\\Desktop\\sites\\APWR_API_Sites\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\Infrastructure\\Data\\ClienteRepository.cs",
               "RelativeToolTip": "SCAD_API_V2\\Infrastructure\\Data\\ClienteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T17:53:39.874Z",
               "EditorCaption": ""

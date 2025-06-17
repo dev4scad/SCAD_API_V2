@@ -2271,32 +2271,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Scad-0048\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/dev4/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2.csproj",
+      "projectUniqueName": "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2.csproj",
       "projectName": "SCAD_API_V2",
-      "projectPath": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2.csproj",
-      "packagesPath": "C:\\Users\\Scad-0048\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Scad-0048\\Desktop\\API\\SCAD_API_V2\\SCAD_API_V2\\SCAD_API_V2\\obj\\",
+      "projectPath": "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2.csproj",
+      "packagesPath": "/home/dev4/.nuget/packages/",
+      "outputPath": "/mnt/c/Users/Scad-0048/Desktop/sites/APWR_API_Sites/SCAD_API_V2/SCAD_API_V2/SCAD_API_V2/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Scad-0048\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/dev4/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2314,8 +2306,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2357,7 +2348,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
