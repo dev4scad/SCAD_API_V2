@@ -10,11 +10,13 @@ namespace SCAD_API_V2.Application.Services
     {
         private readonly IClienteRepository _repo;
         private readonly IMapper _mapper;
+        private readonly ILicencaRepository _licencaRepo;
 
-        public ClienteServices(IClienteRepository repo, IMapper mapper)
+        public ClienteServices(IClienteRepository repo, IMapper mapper, ILicencaRepository licencaRepo)
         {
             _repo = repo;
             _mapper = mapper;
+            _licencaRepo = licencaRepo;
         }
 
         public async Task<List<ClienteDto>> BuscarClientesAsync()
@@ -57,7 +59,51 @@ namespace SCAD_API_V2.Application.Services
         {
             var entidade = _mapper.Map<Cliente>(clienteDto);
             var criados = await _repo.CriarClienteAsync(entidade);
-            return _mapper.Map<List<ClienteDto>>(criados);
+            var clientesCriados = _mapper.Map<List<ClienteDto>>(criados);
+
+            if (clienteDto.Licencas != null && clienteDto.Licencas.Any() && clientesCriados.Any())
+            {
+                var clienteId = clientesCriados.First().ClienteId;
+                
+                try
+                {
+                    foreach (var licencaDto in clienteDto.Licencas)
+                    {
+                        var licencaEntidade = _mapper.Map<Licenca>(licencaDto);
+                        licencaEntidade.ClienteId = clienteId;
+                        licencaEntidade.LicencaKey = GerarChaveUnica();
+                        licencaEntidade.Ativo = true;
+                        
+                        await _licencaRepo.CriarLicencaAsync(licencaEntidade);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception($"Cliente criado, mas erro ao criar licenças: {ex.Message}", ex);
+                }
+            }
+
+            return clientesCriados;
+        }
+
+        private static string GerarChaveUnica()
+        {
+            using var sha256 = System.Security.Cryptography.SHA256.Create();
+            var randomBytes = new byte[32];
+            using var rng = System.Security.Cryptography.RandomNumberGenerator.Create();
+            rng.GetBytes(randomBytes);
+
+            var hash = sha256.ComputeHash(randomBytes);
+            var sb = new System.Text.StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("x2"));
+                if ((i + 1) % 5 == 0 && i < hash.Length - 1)
+                {
+                    sb.Append("-");
+                }
+            }
+            return sb.ToString();
         }
 
         public async Task<ClienteDto> EditarClienteAsync(ClienteDto clienteDto)

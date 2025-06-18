@@ -10,5 +10,6 @@
         public string Telefone { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime? DataExpira { get; set; }
+        public List<LicencaDto>? Licencas { get; set; }
     }
 }
