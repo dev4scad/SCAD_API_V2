@@ -93,14 +93,19 @@ namespace SCAD_API_V2.Infrastructure.Data
 
             const string selectSql = @"
                 SELECT 
-                    LicencaId, 
-                    Licenca AS LicencaKey, 
-                    ClienteId, 
-                    Ativo, 
-                    TipoLicencaId, 
-                    SoftwareId
-                FROM licencas 
-                WHERE ClienteId = @ClienteId";
+                    l.LicencaId, 
+                    l.Licenca AS LicencaKey, 
+                    l.ClienteId, 
+                    l.Ativo, 
+                    l.TipoLicencaId, 
+                    l.SoftwareId,
+                    s.Software,
+                    tl.Tipo AS TipoLicenca,
+                    tl.Periodo
+                FROM licencas l
+                INNER JOIN software s ON l.SoftwareId = s.Id
+                INNER JOIN tiposlicenca tl ON l.TipoLicencaId = tl.TipoId
+                WHERE l.ClienteId = @ClienteId";
             return (await db.QueryAsync<Licenca>(selectSql, new { ClienteId = clienteId })).AsList();
         }
 
