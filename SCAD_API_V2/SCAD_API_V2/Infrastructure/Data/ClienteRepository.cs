@@ -107,13 +107,13 @@ namespace SCAD_API_V2.Infrastructure.Data
 
             const string insertSql = @"
                 INSERT INTO clientes
-                (ClienteId, CNPJ_CPF, Email, Nome, NomeEmpresa, Telefone, DataCadastro)
+                (CNPJ_CPF, Email, Nome, NomeEmpresa, Telefone, DataCadastro)
                 VALUES
-                (@ClienteId, @CNPJ_CPF, @Email, @Nome, @NomeEmpresa, @Telefone, @DataCadastro);";
+                (@CNPJ_CPF, @Email, @Nome, @NomeEmpresa, @Telefone, @DataCadastro);
+                SELECT LAST_INSERT_ID();";
 
-            await db.ExecuteAsync(insertSql, new
+            var novoClienteId = await db.ExecuteScalarAsync<int>(insertSql, new
             {
-                ClienteId = cliente.ClienteId,
                 CNPJ_CPF = cliente.CNPJ_CPF,
                 Email = cliente.Email,
                 Nome = cliente.Nome,
@@ -135,7 +135,7 @@ namespace SCAD_API_V2.Infrastructure.Data
                 FROM clientes
                 WHERE ClienteId = @ClienteId;";
 
-            var criado = await db.QuerySingleAsync<Cliente>(selectSql, new { ClienteId = cliente.ClienteId });
+            var criado = await db.QuerySingleAsync<Cliente>(selectSql, new { ClienteId = novoClienteId });
             return new List<Cliente> { criado };
         }
 

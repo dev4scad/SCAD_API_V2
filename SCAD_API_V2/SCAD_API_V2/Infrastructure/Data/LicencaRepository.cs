@@ -131,10 +131,11 @@ namespace SCAD_API_V2.Infrastructure.Data
 
             const string insertSql = @"
                 INSERT INTO licencas
-                    (LicencaId, Licenca, ClienteId, TipoLicencaId, SoftwareId, Ativo)
+                    (Licenca, ClienteId, TipoLicencaId, SoftwareId, Ativo)
                 VALUES
-                    (@LicencaId, @LicencaKey, @ClienteId, @TipoLicencaId, @SoftwareId, @Ativo);";
-            await db.ExecuteAsync(insertSql, licenca);
+                    (@LicencaKey, @ClienteId, @TipoLicencaId, @SoftwareId, @Ativo);
+                SELECT LAST_INSERT_ID();";
+            var novoLicencaId = await db.ExecuteScalarAsync<int>(insertSql, licenca);
 
             const string selectSql = @"
                 SELECT 
@@ -146,7 +147,7 @@ namespace SCAD_API_V2.Infrastructure.Data
                     SoftwareId
                 FROM licencas 
                 WHERE LicencaId = @LicencaId";
-            var criado = await db.QuerySingleAsync<Licenca>(selectSql, new { licenca.LicencaId });
+            var criado = await db.QuerySingleAsync<Licenca>(selectSql, new { LicencaId = novoLicencaId });
             return new List<Licenca> { criado };
         }
 
